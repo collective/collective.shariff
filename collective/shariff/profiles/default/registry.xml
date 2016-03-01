@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+    <!-- criteria mapping dict ... override this in your theme package -->
+    <record name="collective.shariff.settings.backend_url">
+        <field type="plone.registry.field.TextLine">
+            <title>Shariff Backend URL</title>
+            <description>This is to enable the counters for the sharing buttons. XXX: NOT IMPLEMENTED RIGHT NOW!</description>
+        </field>
+        <value></value>
+    </record>
+    <record name="collective.shariff.settings.theme">
+        <field type="plone.registry.field.TextLine">
+            <title>Shariff Theme</title>
+            <description />
+        </field>
+        <value>standard</value>
+    </record>
+    <record name="collective.shariff.settings.services">
+        <field type="plone.registry.field.Tuple">
+            <title>Shariff Services</title>
+            <description>Available Services: twitter, facebook, googleplus, linkedin, pinterest, xing, whatsapp, mail, info, addthis, tumblr, flattr, diaspora, reddit, stumbleupon, threema</description>
+            <value_type type="plone.registry.field.TextLine" />
+        </field>
+        <value>
+            <element>facebook</element>
+            <element>twitter</element>
+            <element>googleplus</element>
+        </value>
+    </record>
+    <record name="collective.shariff.settings.twitter_via">
+        <field type="plone.registry.field.TextLine">
+            <title>Shariff Twitter account</title>
+            <description />
+        </field>
+        <value />
+    </record>
+
+</registry>

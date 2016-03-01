@@ -1,0 +1,13 @@
+<div class="shariff"
+     data-theme="grey"
+     data-lang="en"
+     data-url="http://www.heise.de/ct/"
+     data-twitter-via="heiseonline"
+     data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;googleplus&quot;,&quot;info&quot;]"
+     tal:attributes="data-theme view/theme;
+                     data-lang view/lang;
+                     data-url view/url;
+                     data-twitter-via view/twitter_via|nothing;
+                     data-services view/services;
+                     data-backend-url view/backend_url|nothing;"
+></div>
