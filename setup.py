@@ -29,11 +29,7 @@ setup(name='collective.shariff',
           'plone.api>=1.5',
       ],
       entry_points="""
-      # -*- Entry points: -*-
-
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
       )
