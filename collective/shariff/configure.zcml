@@ -33,8 +33,9 @@
       name="collective.shariff"
       for="*"
       class=".browser.ShariffViewlet"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContent"
       permission="zope2.View"
+      layer=".interfaces.IShariffInstalled"
       />
 
 </configure>
