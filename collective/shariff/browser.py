@@ -18,10 +18,10 @@ class ShariffViewlet(ViewletBase):
 
     def update(self):
         super(ShariffViewlet, self).update()
-        self.backend_url = "{}/{}".format(
-            self.navigation_root_url,
-            api.portal.get_registry_record(
-                'collective.shariff.settings.backend_url'))
+        b_url = api.portal.get_registry_record(
+            'collective.shariff.settings.backend_url')
+        if b_url:
+            self.backend_url = "{}/{}".format(self.navigation_root_url, b_url)
         self.theme = api.portal.get_registry_record(
             'collective.shariff.settings.theme')
         self.lang = api.portal.get_current_language()
