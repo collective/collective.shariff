@@ -4,6 +4,7 @@
      data-url="http://www.heise.de/ct/"
      data-twitter-via="heiseonline"
      data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;googleplus&quot;,&quot;info&quot;]"
+     style="clear:both;"
      tal:attributes="data-theme view/theme;
                      data-lang view/lang;
                      data-url view/url;
