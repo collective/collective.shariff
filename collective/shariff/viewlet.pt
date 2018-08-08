@@ -1,6 +1,7 @@
 <div class="shariff"
      data-theme="grey"
      data-lang="en"
+     data-button-style="icon"
      data-url="http://www.heise.de/ct/"
      data-mail-url="mailto:"
      data-twitter-via="heiseonline"
