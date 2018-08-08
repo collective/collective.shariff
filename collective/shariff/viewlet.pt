@@ -2,6 +2,7 @@
      data-theme="grey"
      data-lang="en"
      data-url="http://www.heise.de/ct/"
+     data-mail-url="mailto:"
      data-twitter-via="heiseonline"
      data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;googleplus&quot;,&quot;info&quot;]"
      style="clear:both;"
