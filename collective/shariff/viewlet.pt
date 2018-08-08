@@ -9,6 +9,7 @@
      tal:attributes="data-theme view/theme;
                      data-lang view/lang;
                      data-url view/url;
+                     data-title context/Title;
                      data-twitter-via view/twitter_via|nothing;
                      data-services view/services;
                      data-backend-url view/backend_url|nothing;"
