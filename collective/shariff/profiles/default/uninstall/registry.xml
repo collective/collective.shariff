@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<registry xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+    <record name="collective.shariff.settings.backend_url" remove="True" />
+    <record name="collective.shariff.settings.theme" remove="True" />
+    <record name="collective.shariff.settings.services" remove="True" />
+    <record name="collective.shariff.settings.twitter_via" remove="True" />
+</registry>

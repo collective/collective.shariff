@@ -16,6 +16,15 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.shariff (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.shariff package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+
   <!-- -*- extra stuff goes here -*- -->
   <browser:resourceDirectory
       name="collective.shariff"
