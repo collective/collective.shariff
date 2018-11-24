@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0b2 (unreleased)
-------------------
+1.0 (2018-11-24)
+----------------
 
 - Add uninstall profile
   [fredvd]
