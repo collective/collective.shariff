@@ -19,13 +19,12 @@
     <record name="collective.shariff.settings.services">
         <field type="plone.registry.field.Tuple">
             <title>Shariff Services</title>
-            <description>Available Services: twitter, facebook, googleplus, linkedin, pinterest, xing, whatsapp, mail, info, addthis, tumblr, flattr, diaspora, reddit, stumbleupon, threema</description>
+            <description>Available Services: twitter, facebook, linkedin, pinterest, xing, whatsapp, mail, info, addthis, tumblr, flattr, diaspora, reddit, stumbleupon, threema</description>
             <value_type type="plone.registry.field.TextLine" />
         </field>
         <value>
             <element>facebook</element>
             <element>twitter</element>
-            <element>googleplus</element>
         </value>
     </record>
     <record name="collective.shariff.settings.twitter_via">
