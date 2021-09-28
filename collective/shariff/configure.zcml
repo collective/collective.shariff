@@ -24,6 +24,13 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:upgradeStep
+      title="Refresh and cook scripts and styles"
+      source="*"
+      destination="1001"
+      handler=".setuphandlers.load_and_cook_default_js_and_css"
+      profile="collective.shariff:default"
+      />
 
   <!-- -*- extra stuff goes here -*- -->
   <browser:resourceDirectory
