@@ -1,13 +1,17 @@
 from setuptools import setup, find_packages
-import os
 
 version = '1.1.dev0'
 
 setup(name='collective.shariff',
       version=version,
       description="Implement shariff - social media buttons with privacy",
-      long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description='\n\n'.join([
+            open("README.rst").read(),
+            open("docs/HISTORY.rst").read(),
+            open("docs/CONTRIBUTORS.rst").read(),
+            open("docs/TODO.rst").read(),
+            ]),
+      long_description_content_type='text/x-rst',
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
