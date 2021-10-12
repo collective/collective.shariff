@@ -1,15 +1,15 @@
 from setuptools import setup, find_packages
 
-version = '1.1.dev0'
+version = '1.1.a1'
 
 setup(name='collective.shariff',
       version=version,
       description="Implement shariff - social media buttons with privacy",
       long_description='\n\n'.join([
             open("README.rst").read(),
-            open("docs/HISTORY.rst").read(),
-            open("docs/CONTRIBUTORS.rst").read(),
             open("docs/TODO.rst").read(),
+            open("docs/CONTRIBUTORS.rst").read(),
+            open("docs/HISTORY.rst").read(),
             ]),
       long_description_content_type='text/x-rst',
       # Get more strings from

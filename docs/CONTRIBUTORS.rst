@@ -2,7 +2,7 @@ Contributors
 ============
 
 - Peter Mathis (original author)
-- [fredvd]
+- Fred van Dijk
 - [ale-rt]
 - Tobias Herp
 
