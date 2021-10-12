@@ -3,7 +3,7 @@ Contributors
 
 - Peter Mathis (original author)
 - Fred van Dijk
-- [ale-rt]
+- Alessandro Pisa
 - Tobias Herp
 
 This is a mere integration of the shariff_ Javascript package into Plone;
