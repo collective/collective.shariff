@@ -1,7 +1,9 @@
+from plone import api
+from plone.app.layout.globals.interfaces import IViewView
+from plone.app.layout.viewlets.common import ViewletBase
 from Products.Five import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone import api
-from plone.app.layout.viewlets.common import ViewletBase
+
 import json
 
 
@@ -15,6 +17,12 @@ class Shariff(BrowserView):
 
 class ShariffViewlet(ViewletBase):
     index = ViewPageTemplateFile('viewlet.pt')
+
+    def render(self):
+        # hide on edit/add views
+        if IViewView.providedBy(self.view):
+            return self.index()
+        return u""
 
     def update(self):
         super(ShariffViewlet, self).update()
