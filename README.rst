@@ -1,8 +1,8 @@
 Introduction
 ============
 
-This package contains resources of https://github.com/heiseonline/shariff
-a social media button package with focus on privacy
+This package contains resources of https://github.com/heiseonline/shariff −
+a social media button package with focus on privacy.
 
 Versions:
 ---------
