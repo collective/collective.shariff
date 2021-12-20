@@ -1,7 +1,14 @@
 Changelog
 =========
 
-1.1 (unreleased)
+2.0 (2021-12-20)
+----------------
+
+- Plone 5.x/6.0 compatibility.
+  [petschki]
+
+
+1.1 (2021-12-20)
 ----------------
 
 - Update to `shariff v3.2.1`_
@@ -13,7 +20,7 @@ Changelog
 
 - Add uninstall profile
   [fredvd]
-  
+
 - Update shariff build
   [ale-rt]
 
