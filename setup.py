@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.1.a1'
+version = '1.1'
 
 setup(name='collective.shariff',
       version=version,

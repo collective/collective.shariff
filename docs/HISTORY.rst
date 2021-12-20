@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2021-12-20)
 ----------------
 
 - Update to `shariff v3.2.1`_
