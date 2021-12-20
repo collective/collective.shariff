@@ -1,10 +1,11 @@
 Changelog
 =========
 
-2.1 (unreleased)
-----------------
+2.0.1 (unreleased)
+------------------
 
-- Nothing changed yet.
+- Update README
+  [petschki]
 
 
 2.0 (2021-12-20)

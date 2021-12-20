@@ -7,9 +7,7 @@ setup(name='collective.shariff',
       description="Implement shariff - social media buttons with privacy",
       long_description='\n\n'.join([
             open("README.rst").read(),
-            open("docs/TODO.rst").read(),
-            open("docs/CONTRIBUTORS.rst").read(),
-            open("docs/HISTORY.rst").read(),
+            open("CHANGES.rst").read(),
             ]),
       long_description_content_type='text/x-rst',
       # Get more strings from
