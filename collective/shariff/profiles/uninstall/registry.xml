@@ -4,4 +4,6 @@
     <record name="collective.shariff.settings.theme" remove="True" />
     <record name="collective.shariff.settings.services" remove="True" />
     <record name="collective.shariff.settings.twitter_via" remove="True" />
+    <records prefix="plone.bundles/shariff" interface='Products.CMFPlone.interfaces.IBundleRegistry' remove="True" />
+    <records prefix="plone.bundles/shariff-complete" interface='Products.CMFPlone.interfaces.IBundleRegistry' remove="True" />
 </registry>

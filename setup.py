@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '1.1.a1'
+version = '2.0a1'
 
 setup(name='collective.shariff',
       version=version,
@@ -15,8 +15,15 @@ setup(name='collective.shariff',
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Framework :: Plone :: 4.3",
+        "Framework :: Plone",
+        "Framework :: Plone :: 5.1",
+        "Framework :: Plone :: 5.2",
+        "Framework :: Plone :: 6.0",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         ],
       keywords='',
       author='petschki',

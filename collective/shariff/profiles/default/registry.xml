@@ -35,4 +35,16 @@
         <value />
     </record>
 
+    <records prefix="plone.bundles/shariff-complete"
+           interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="depends">plone-base</value>
+        <value key="load_async">True</value>
+        <value key="merge_with">default</value>
+        <value key="compile">True</value>
+        <value key="enabled">True</value>
+        <value key="jscompilation">/++plone++collective.shariff/shariff.complete.js</value>
+        <value key="csscompilation">/++plone++collective.shariff/shariff.complete.css</value>
+        <value key="last_compilation">2021-12-20 10:00:00</value>
+    </records>
+
 </registry>
