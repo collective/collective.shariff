@@ -6,3 +6,8 @@ recursive-include collective *.js
 recursive-include collective *.pt
 recursive-include collective *.xml
 recursive-include collective *.zcml
+recursive-include collective *.eot
+recursive-include collective *.svg
+recursive-include collective *.ttf
+recursive-include collective *.woff
+recursive-include collective *.woff2
