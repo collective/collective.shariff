@@ -33,10 +33,16 @@ setup(name='collective.shariff',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          # -*- Extra requirements: -*-
-          'plone.api>=1.5',
+            'setuptools',
+            # -*- Extra requirements: -*-
+            'plone.api>=1.5',
       ],
+      extras_require={
+            "test": [
+                  "plone.app.testing",
+                  "plone.app.contenttypes",
+            ]
+      },
       entry_points="""
       [z3c.autoinclude.plugin]
       target = plone
