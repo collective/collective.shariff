@@ -63,3 +63,7 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+/*-mxdev.txt
+/.make-sentinels/
+.installed.txt

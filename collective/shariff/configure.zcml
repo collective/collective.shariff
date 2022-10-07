@@ -7,43 +7,44 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.shariff">
 
-  <genericsetup:registerProfile
-      name="default"
-      title="collective.shariff"
-      directory="profiles/default"
-      description="Installs the collective.shariff package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    <genericsetup:registerProfile
+        name="default"
+        title="collective.shariff"
+        directory="profiles/default"
+        description="Installs the collective.shariff package"
+        provides="Products.GenericSetup.interfaces.EXTENSION" />
 
-  <genericsetup:registerProfile
-      name="uninstall"
-      title="collective.shariff (uninstall)"
-      directory="profiles/uninstall"
-      description="Uninstalls the collective.shariff package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="collective.shariff (uninstall)"
+        directory="profiles/uninstall"
+        description="Uninstalls the collective.shariff package"
+        provides="Products.GenericSetup.interfaces.EXTENSION" />
 
-  <!-- -*- extra stuff goes here -*- -->
-  <plone:static
+    <utility
+        factory=".setuphandlers.HiddenProfiles"
+        name="collective.shariff-hiddenprofiles" />
+
+    <include file="upgrades.zcml" />
+
+    <!-- -*- extra stuff goes here -*- -->
+    <plone:static
         directory="resources"
         type="plone"
+        name="collective.shariff" />
+
+    <browser:page
+        name="shariff"
+        class=".browser.Shariff"
+        for="*"
+        permission="zope2.View" />
+
+    <browser:viewlet
         name="collective.shariff"
-        />
-
-  <browser:page
-      name="shariff"
-      class=".browser.Shariff"
-      for="*"
-      permission="zope2.View"
-      />
-
-  <browser:viewlet
-      name="collective.shariff"
-      for="*"
-      class=".browser.ShariffViewlet"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContent"
-      permission="zope2.View"
-      layer=".interfaces.IShariffInstalled"
-      />
+        for="*"
+        class=".browser.ShariffViewlet"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        permission="zope2.View"
+        layer=".interfaces.IShariffInstalled" />
 
 </configure>

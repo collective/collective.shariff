@@ -1,40 +1,12 @@
-# -*- coding: utf-8 -*-
-from Products.CMFCore.utils import getToolByName
-
-from .decorator import step
+from Products.CMFPlone.interfaces import INonInstallable
+from zope.interface import implementer
 
 
-@step
-def load_and_cook_default_js_and_css(context, logger):
-    setup = getToolByName(context, 'portal_setup')
-    run_step = setup.runImportStepFromProfile
-    info = logger.info
-    profiles = ['profile-collective.shariff:default',
-                ]
-    for xmlname, toolname in [
-        ('jsregistry',  'portal_javascripts'),
-        ('cssregistry', 'portal_css'),
-        ]:
-        for profile in profiles:
-            info('Profile %(profile)r: %(xmlname)s.xml', locals())
-            try:
-                run_step(profile, xmlname)
-            except Exception as e:
-                logger.error('error running %(xmlname)r from %(profile)s',
-                             locals())
-                logger.error('Exception: %(e)r', locals())
-                logger.error('e.args: %s', (e.args,))
-                raise
-        tool = getToolByName(context, toolname)
-        info('toolname %(toolname)r --> tool %(tool)r', locals())
-        try:
-            tool.cookResources()
-        except AttributeError as e:
-            logger.error('%(xmlname)s.xml: '
-                         'The %(toolname)r tool lacks a cookResources method'
-                         ' %(tool)r',
-                         locals())
-            raise
-        else:
-            info('%(xmlname)s resources cooked.', locals())
-
+@implementer(INonInstallable)
+class HiddenProfiles:
+    def getNonInstallableProfiles(self):
+        """Hide uninstall profile from site-creation and quickinstaller"""
+        return [
+            # in any case we got an uninstall, here we hide it
+            "collective.shariff:uninstall",
+        ]

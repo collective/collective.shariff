@@ -2,4 +2,4 @@ from zope.interface import Interface
 
 
 class IShariffInstalled(Interface):
-    """ browserlayer for viewlet """
+    """browserlayer for viewlet"""

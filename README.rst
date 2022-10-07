@@ -8,7 +8,8 @@ Versions:
 ---------
 
 - 1.x -> Plone 4.3
-- 2.x -> Plone 5.x/6.0
+- 2.x -> Plone 5.x
+- 3.x -> Plone 6.x
 
 
 TODO

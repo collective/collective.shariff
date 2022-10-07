@@ -1,10 +1,11 @@
 Changelog
 =========
 
-2.0.2 (unreleased)
+3.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Plone 6 compatibility.
+  [petschki]
 
 
 2.0.1 (2021-12-20)
