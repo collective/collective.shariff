@@ -10,4 +10,3 @@ class HiddenProfiles:
             # in any case we got an uninstall, here we hide it
             "collective.shariff:uninstall",
         ]
-
