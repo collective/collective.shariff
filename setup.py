@@ -41,6 +41,8 @@ setup(name='collective.shariff',
             "test": [
                   "plone.app.testing",
                   "plone.app.contenttypes",
+                  "plone.app.robotframework",
+                  "robotframework-selenium2library",
             ]
       },
       entry_points="""
