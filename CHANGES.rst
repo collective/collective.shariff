@@ -1,5 +1,5 @@
-1.2 (unreleased)
-----------------
+1.1.1 (2023-05-23)
+------------------
 
 - fix missing font resources in released package.
   [petschki]
