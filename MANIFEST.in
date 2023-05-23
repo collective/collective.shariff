@@ -1,8 +1,13 @@
+include *.rst *.GPL *.txt
+recursive-include docs *.txt
+recursive-include docs *.rst
 recursive-include collective *.css
 recursive-include collective *.js
 recursive-include collective *.pt
 recursive-include collective *.xml
 recursive-include collective *.zcml
-recursive-include docs *.GPL
-recursive-include docs *.rst
-recursive-include docs *.txt
+recursive-include collective *.eot
+recursive-include collective *.svg
+recursive-include collective *.ttf
+recursive-include collective *.woff
+recursive-include collective *.woff2
